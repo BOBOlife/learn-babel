@@ -1,0 +1,19 @@
+{
+  "name": "learn-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/generator": "^7.20.5",
+    "@babel/parser": "^7.20.5",
+    "@babel/template": "^7.18.10",
+    "@babel/traverse": "^7.20.5",
+    "@babel/types": "^7.20.5"
+  }
+}
