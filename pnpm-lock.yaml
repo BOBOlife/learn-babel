@@ -7,7 +7,11 @@ specifiers:
   '@babel/template': ^7.18.10
   '@babel/traverse': ^7.20.5
   '@babel/types': ^7.20.5
+  '@types/acorn': ^6.0.0
   '@types/node': ^18.11.17
+  acorn: ^8.8.1
+  acorn-bigint: ^1.0.0
+  acorn-jsx: ^5.3.2
 
 dependencies:
   '@babel/core': 7.20.5
@@ -16,8 +20,12 @@ dependencies:
   '@babel/template': 7.18.10
   '@babel/traverse': 7.20.5
   '@babel/types': 7.20.5
+  acorn: 8.8.1
+  acorn-bigint: 1.0.0_acorn@8.8.1
+  acorn-jsx: 5.3.2_acorn@8.8.1
 
 devDependencies:
+  '@types/acorn': 6.0.0
   '@types/node': 18.11.17
 
 packages:
@@ -261,9 +269,39 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: false
 
+  /@types/acorn/6.0.0:
+    resolution: {integrity: sha512-8tSIZoick397hAZIZkiq6R09qNgLjx0CBvmxix3gWyCi6UvXNFjN56xh4e1wTwyYlnTEy32tgo9cooxt6J4lhA==}
+    deprecated: This is a stub types definition. acorn provides its own type definitions, so you do not need this installed.
+    dependencies:
+      acorn: 8.8.1
+    dev: true
+
   /@types/node/18.11.17:
     resolution: {integrity: sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==}
     dev: true
+
+  /acorn-bigint/1.0.0_acorn@8.8.1:
+    resolution: {integrity: sha512-AEbe7S7TA5Y89pbc+g5kjWcG/9CiW+fYBKQRd2+ihwCgp8cIol1J5ewHsQOCAIs+K3KEmpaLQixoAyy0sLkSJg==}
+    engines: {node: '>=4.8.2'}
+    deprecated: acorn>=6.2 supports bigint
+    peerDependencies:
+      acorn: ^6.0.0
+    dependencies:
+      acorn: 8.8.1
+    dev: false
+
+  /acorn-jsx/5.3.2_acorn@8.8.1:
+    resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
+    peerDependencies:
+      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      acorn: 8.8.1
+    dev: false
+
+  /acorn/8.8.1:
+    resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
 
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
